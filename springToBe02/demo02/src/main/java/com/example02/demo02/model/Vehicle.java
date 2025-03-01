@@ -1,8 +1,6 @@
-package com.eazybytes.examples.beans;
-
+package com.example02.demo02.model;
 
 public class Vehicle {
-    
     private String name;
 
     public String getName() {
@@ -12,5 +10,7 @@ public class Vehicle {
     public void setName(String name) {
         this.name = name;
     }
+
+    
     
 }

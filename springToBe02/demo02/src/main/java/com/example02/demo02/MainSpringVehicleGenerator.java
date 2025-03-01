@@ -15,7 +15,6 @@ import com.example02.demo02.model.Vehicle;
 public class MainSpringVehicleGenerator {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MainSpringVehicleGenerator.class, args);
 		//Bootstrap the primary Spring Boot application context
         ApplicationContext context = SpringApplication.run(MainSpringVehicleGenerator.class, args);
         //Create an additional manual configuration context
@@ -34,7 +33,7 @@ public class MainSpringVehicleGenerator {
 		System.out.println("Vehicle name of IoC using manual config context: " + vehicle2.getName());
 
 		/*NOTE: Beans in each context are managed independently. If the same bean is defined in both contexts, you will have two separate instances of that bean. */
+	
 	}
-
 
 }

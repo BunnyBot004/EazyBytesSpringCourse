@@ -10,11 +10,17 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Demo05Application {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext context1 = SpringApplication.run(Demo05Application.class, args);
+        ConfigurableApplicationContext context = SpringApplication.run(Demo05Application.class, args);
 //        var context = new AnnotationConfigApplicationContext(Demo05Application.class);
-        Vehicle bean = context1.getBean(Vehicle.class);
+        System.out.println("-----------------------------------------------------------------------------------------");
+
+        Vehicle bean = context.getBean(Vehicle.class);
         bean.componentDemonstration();
         System.out.println(bean.getName());
+
+//        Initializes the closing of all Beans programmatically
+        context.close();
+        System.out.println("-----------------------------------------------------------------------------------------");
     }
 
 }

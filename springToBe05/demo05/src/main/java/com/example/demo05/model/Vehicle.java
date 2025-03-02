@@ -1,5 +1,7 @@
 package com.example.demo05.model;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
@@ -29,6 +31,16 @@ public class Vehicle {
     }
 
     public void componentDemonstration() {
-        System.out.println("Component Demonstration");
+        System.out.println("Demonstration of Component");
+    }
+
+    @PostConstruct
+    public void postConstruct() {
+        System.out.println("PostConstruct of Component: " + toString());
+    }
+
+    @PreDestroy
+    public void preDestroy() {
+        System.out.println("PreDestroy of Component: " + toString());
     }
 }

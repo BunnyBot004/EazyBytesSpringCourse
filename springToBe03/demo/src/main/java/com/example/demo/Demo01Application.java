@@ -7,10 +7,10 @@ import org.springframework.context.ConfigurableApplicationContext;
 import com.example.demo.model.Vehicle;
 
 @SpringBootApplication
-public class MainDuplicateVehicleGenerator {
+public class Demo01Application {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext applicationContext = SpringApplication.run(MainDuplicateVehicleGenerator.class, args);
+		ConfigurableApplicationContext applicationContext = SpringApplication.run(Demo01Application.class, args);
 		Vehicle v1 = applicationContext.getBean("vehicle01",Vehicle.class);
 		Vehicle v2 = applicationContext.getBean("vehicle02",Vehicle.class);
 

@@ -1,10 +1,7 @@
 package com.example02.demo02;
 
-import java.text.Annotation;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.web.reactive.HttpHandlerAutoConfiguration.AnnotationConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -12,11 +9,11 @@ import com.example02.demo02.config.ProjectConfig;
 import com.example02.demo02.model.Vehicle;
 
 @SpringBootApplication
-public class MainSpringVehicleGenerator {
+public class Demo02Application {
 
 	public static void main(String[] args) {
 		//Bootstrap the primary Spring Boot application context
-        ApplicationContext context = SpringApplication.run(MainSpringVehicleGenerator.class, args);
+        ApplicationContext context = SpringApplication.run(Demo02Application.class, args);
         //Create an additional manual configuration context
         var otherContext = new AnnotationConfigApplicationContext(ProjectConfig.class);
 		

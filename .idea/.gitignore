@@ -6,3 +6,44 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+# Ignore compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore logs
+*.log
+logs/
+*.out
+
+# Ignore IDE and editor settings
+.idea/
+.vscode/
+*.iml
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore build and dependency directories
+/target/
+/build/
+/node_modules/
+
+# Ignore environment variables and credentials
+.env
+application.properties
+application.yml
+# Ignore IntelliJ-specific files
+.idea/libraries/
+.idea/sonarlint/
+
+# Ignore compiled output directories
+out/
+
+# Ignore specific IntelliJ project file
+springToBe06/springToBe06.iml
+
+
